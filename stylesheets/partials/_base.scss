@@ -1,0 +1,55 @@
+@import "compass";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+// Reversed?
+$reversed-text: false;
+@import "modules/utility";
+
+// Base Font
+$base-font-family: "Poppins", Hevetica, Arial, sans-serif;
+$base-font-size: 14px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: "Poppins", Hevetica, Arial, sans-serif;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Text Colors
+$text-color: #333333;
+$loud-color: strengthen($text-color);
+$quiet-color: soften($text-color, 1.5);
+$header-color: strengthen($text-color, 0.66);
+
+// Link Colors
+$link-color: #bb3a08;
+$link-visited-color: #a72;
+$link-hover-color: #f66933;
+
+// Theme Colors
+$background-color: white;
+$banner-color: #973b12;
+$primary-green: #2F4746;
+$secondary-green: #A9C549;
+$secondary-red: #BE493C;
+$tertiary-yellow: #F9CB71;
+$off-white: #ECF0F1;
+
+
+// Paragraphs
+$indented-paragraphs: false;
+
+// Layout
+$body-margin-x: 40px;
+$max-body-width: 1200px;
+
+// Border Radius
+$default-border-radius: 8px;
+
+@import "modules/all";
+
+@include global-reset;
+@include reset-html5;
+
+html, body { background: $background-color; }
+body { @include base-font; }

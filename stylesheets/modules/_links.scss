@@ -1,0 +1,32 @@
+@mixin basic-link($color: $link-color, $visited: $color, $hover: $color, $decoration: "underline") {
+  &:link { 
+    color: $color;
+    @if $decoration == "underline" { text-decoration: underline; }
+    @if $decoration == "plain"     { text-decoration: none; }
+  }
+  &:visited {
+    color: $visited;
+  }
+  &:hover {
+    color: $hover;
+    @if $decoration == "underline" { text-decoration: none; }
+    @if $decoration == "plain"     { text-decoration: underline; }
+  }
+}
+
+a:hover{cursor: pointer;}
+a.text-link{
+  font-weight: bold;
+  color: $tertiary-yellow;
+  &:hover{color:lighten($tertiary-yellow, 10%);}
+  &:after{
+    font-family: 'icomoon' !important;
+    content:"\e904";
+    margin-left: 2px;
+    font-size: 12px;
+  }
+}
+a.primary{
+  color: $secondary-red;
+  &:hover{color:lighten($secondary-red, 10%);}
+}
