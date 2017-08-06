@@ -1,26 +1,26 @@
 <!doctype html>
 <html lang="<?= site()->language() ? site()->language()->code() : 'en' ?>">
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
+    <?= css('assets/css/screen.css') ?>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-  <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
-  <meta name="description" content="<?= $site->description()->html() ?>">
-
-  <?= css('assets/css/index.css') ?>
-
-</head>
-<body>
-
-  <header class="header wrap wide" role="banner">
-    <div class="grid">
-
-      <div class="branding column">
-        <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a>
-      </div>
-
-      <?php snippet('menu') ?>
-
-    </div>
-  </header>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header role="banner">
+      <section>
+      <a id="logo" href="/"><?= (new Asset("assets/images/tls-logo.png")) ?></a>
+      <nav>
+        <a><span>ABOUT US</span></a>
+        <a><span>LOAN PROCESS</span></a>
+        <a><span>LOAN PROGRAMS</span></a>
+        <a><span>TOOLS</span></a>
+        <a><span>FAQs</span></a>
+        <a><span>CONTACT US</span></a>
+      </nav>
+      </section>
+    </header>

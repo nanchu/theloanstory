@@ -3,14 +3,38 @@ title: Home
 pages: false
 
 fields:
-  title:
-    label: Title
-    type:  text
+  heading:
+    label: Heading
+    type: text
 
-  intro:
-    label: Intro
-    type:  textarea
+  subheading:
+    label: Subheading
+    type: text
 
   text:
     label: Text
     type:  textarea
+
+  review1:
+    label: Review 1
+    type: textarea
+
+  reviewer1:
+    label: Reviewer 1
+    type: text
+
+  review2:
+    label: Review 2
+    type: textarea
+
+  reviewer2:
+    label: Reviewer 2
+    type: text
+
+  review3:
+    label: Review 3
+    type: textarea
+
+  reviewer3:
+    label: Reviewer 3
+    type: text

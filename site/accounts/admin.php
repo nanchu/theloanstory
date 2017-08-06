@@ -6,3 +6,5 @@ password: >
 email: a.bar.of.soap@gmail.com
 language: en
 role: admin
+history:
+  - home

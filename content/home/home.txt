@@ -6,15 +6,40 @@ Intro: Yay! If you are seeing this, the installation of Kirby worked. :-)
 
 ----
 
-Text: 
+Text: Buying a home can be tricky and confusing. Mortgage? Refinance? Fixed or adjustable rate? Whatever your situation, our loan advisors will help you navigate the complex maze of home financing and find the perfect program, just for you.
 
-## Get started
+----
 
-- Go to the (link: panel text: Panel) to give Kirby's admin interface a try
-- Check out the (link: http://getkirby.com/docs text: docs) and start building your own site
-- Follow (twitter: @getkirby) on Twitter for updates
-- Visit the (link: http://forum.getkirby.com text: forum) to connect with other Kirby users
-- Sign up to (link: https://getkirby.com/#kosmos text: Kirby Kosmos), our monthly newsletter
-- (link: http://getkirby.com/support text: Get in contact) if you need support.
+Tagline: Every loan has its own story. Tell us yours, and we'll do the rest.
 
-**Have fun with Kirby!**
+----
+
+Heading: Every loan has its own story.
+
+----
+
+Subheading: Tell us yours, and we'll do the rest.
+
+----
+
+Review1: No cost loan completed by an expert team providing excellent service? Yes please! ...We love the Loan Story and have recommended them to a ton of our friends.
+
+----
+
+Reviewer1: David R.
+
+----
+
+Review2: They are exceptionally responsive and organized. … We now live 600 miles away and still use their services!
+
+----
+
+Reviewer2: Dennis N.
+
+----
+
+Review3: The whole experience from start to finish was so easy and they were the ones that made it so easy. Communication was great and I would work with them again in the future in a heartbeat….
+
+----
+
+Reviewer3: Zach L.
