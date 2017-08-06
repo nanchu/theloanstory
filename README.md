@@ -1,82 +1,84 @@
-What is this?
-=============
+# Kirby
 
-This is a simple HTML prototype written in HAML or ERB that is designed to be
-viewed with Serve.
+Kirby is a file-based CMS.
+Easy to setup. Easy to use. Flexible as hell.
 
-What is Serve? Serve is an open-source rapid prototyping framework for Web
-applications. It makes it easy to prototype functionality without writing a
-single line of backend code.
+## Trial
 
+You can try Kirby on your local machine or on a test
+server as long as you need to make sure it is the right
+tool for your next project.
 
-How do I install and run Serve?
--------------------------------
+## Buy a license
 
-Serve is distributed as a Ruby gem to make it easy to get up and running. You
-must have Ruby installed in order to download and use Serve. The Ruby download
-page provides instructions for getting Ruby setup on different platforms:
+You can purchase your Kirby license at
+<https://getkirby.com/buy>
 
-<http://www.ruby-lang.org/en/downloads/>
+A Kirby license is valid for a single domain. You can find
+Kirby's license agreement here: <https://getkirby.com/license>
 
-After you have Ruby installed, open up the command prompt and type:
+## The Starterkit
 
-    gem install serve
+Kirby's Starterkit comes with a small demo website and a fully
+configured panel. Feel free to modify it and play with it as
+much as you like.
 
-(OSX and Unix users may need to prefix the command with `sudo`.)
+There's also the [Langkit](https://github.com/getkirby/langkit.git)
+in case you need a multi-language installation.
 
-After Serve is installed, you can start it up in a given directory like this:
+## The Panel
 
-    serve
+You can find the login for Kirby's admin interface at
+http://yourdomain.com/panel. You will be guided through the signup
+process for your first user, when you visit the panel
+for the first time.
 
-This will start Serve on port 3000. You can now view the prototype in your
-Web browser at this URL:
+## Installation
 
-<http://localhost:3000>
+Kirby does not require a database, which makes it very easy to
+install. Just copy Kirby's files to your server and visit the
+URL for your website in the browser.
 
+**Please check if the invisible .htaccess file has been
+copied to your server correctly**
 
-Compass and Sass
-----------------
+### Requirements
 
-This prototype uses Compass and Sass to generate CSS. Both are distributed as
-Ruby gems and can be easily installed from the command prompt. Since the
-Compass gem depends on Sass, you can install them both with one command:
+Kirby runs on PHP 5.4+, Apache or Nginx.
 
-    gem install compass
+### Download
 
-Learn more about Sass:
+You can download the latest version of the Starterkit
+from https://download.getkirby.com
 
-<http://sass-lang.org>
+### With Git
 
-Learn more about Compass:
+If you are familiar with Git, you can clone Kirby's
+Starterkit repository from Github.
 
-<http://compass-style.org>
+    git clone https://github.com/getkirby/starterkit.git
 
+## Documentation
 
-Rack and Passenger
-------------------
+<https://getkirby.com/docs>
 
-Astute users may notice that this project is also a simple Rack application.
-This means that it is easy to deploy it on Passenger or in any other
-Rack-friendly environment. Rack it up with the `rackup` command. For more
-information about using Serve and Passenger see:
+## Issues and feedback
 
-<http://bit.ly/serve-and-passenger>
+If you have a Github account, please report issues
+directly on Github:
 
+- <https://github.com/getkirby/kirby/issues>
+- <https://github.com/getkirby/panel/issues>
+- <https://github.com/getkirby/starterkit/issues>
 
-Exporting
----------
+Otherwise you can use Kirby's forum: https://forum.getkirby.com
+or send us an email: <support@getkirby.com>
 
-To export your project, use the new "export" command:
+## Support
 
-    serve export project output
+<https://getkirby.com/support>
 
-Where "project" is the path to the project and "output" is the path to the
-directory where you would like your HTML and CSS generated.
+## Copyright
 
-
-Learning More
--------------
-
-You can learn more about Serve on the GitHub project page:
-
-<http://github.com/jlong/serve>
+© 2009-2016 Bastian Allgeier (Bastian Allgeier GmbH)
+<http://getkirby.com>
