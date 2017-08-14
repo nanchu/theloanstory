@@ -29,19 +29,30 @@ header[role=banner] {
     a{
       position:relative;
       display: inline-block;
-      padding: 0 10px;
       margin-right: -5px;
-      width: 110px;
+      width: 100px;
       height: 70px;
-      color: #fff;
       vertical-align: baseline;
       &:hover{background-color:$secondary-green;};
-      span{position:absolute; bottom:5px;}
+      span{
+        position: absolute; 
+        bottom: 0;
+        padding: 10px 15px 5px 10px;
+        color: #fff;
+      }
       &:last-child{
         background-color:$secondary-red;
         &:hover{background-color: $tertiary-yellow;}
       }
+      &.active{
+        &:hover{background-color: transparent;}
+        span{background-color: $off-white;
+        color: $primary-green;
+        font-weight: bold;
+        }
+      }
     }
+
   }
   .action-link {
     position: absolute;

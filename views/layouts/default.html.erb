@@ -4,20 +4,22 @@
     <meta charset="utf-8">
     <title><%= @title %></title>
     <link rel="stylesheet" href="/stylesheets/screen.css">
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/application.js"></script>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="<%= yield (:body_class) %>">
     <header role="banner">
       <section>
       <a id="logo" href="/"><%= image "tls-logo" %></a>
       <nav>
-        <a><span>ABOUT US</span></a>
-        <a><span>LOAN PROCESS</span></a>
-        <a><span>LOAN PROGRAMS</span></a>
-        <a><span>TOOLS</span></a>
-        <a><span>Apply Now</span></a>
+        <a href="/about" class="about-us"><span >ABOUT US</span></a>
+        <a href="/loan-process" class="loan-process"><span>LOAN PROCESS</span></a>
+        <a href="/loan-programs" class="loan-programs"><span>LOAN PROGRAMS</span></a>
+        <a href="/tools" class="tools"><span>TOOLS</span></a>
+        <a href="/apply-now" class="apply-now"><span>Apply Now</span></a>
       </nav>
       <span class="icon-menu"></span>
       </section>
