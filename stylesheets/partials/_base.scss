@@ -1,17 +1,17 @@
 @import "compass";
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,600,700,800');
 
 // Reversed?
 $reversed-text: false;
 @import "modules/utility";
 
 // Base Font
-$base-font-family: "Poppins", Hevetica, Arial, sans-serif;
+$base-font-family: "Muli", Hevetica, Arial, sans-serif;
 $base-font-size: 14px;
 $base-line-height: 1.4;
 
 // Fixed Font
-$fixed-font-family: "Poppins", Hevetica, Arial, sans-serif;
+$fixed-font-family: "Muli", Hevetica, Arial, sans-serif;
 $fixed-font-size: 85%;
 $fixed-line-height: $base-line-height;
 
@@ -32,7 +32,7 @@ $banner-color: #973b12;
 $primary-green: #1D403E;
 $secondary-green: #A9C549;
 $secondary-red: #BE493C;
-$tertiary-yellow: #F9CB71;
+$tertiary-yellow: #F9CF79;
 $off-white: #ECF0F1;
 
 
@@ -53,3 +53,10 @@ $default-border-radius: 8px;
 
 html, body { background: $background-color; }
 body { @include base-font; }
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

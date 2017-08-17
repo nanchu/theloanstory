@@ -1,15 +1,15 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Muli:400,400i,600,700,800");
 a:hover {
   cursor: pointer;
 }
 
 a.text-link {
   font-weight: bold;
-  color: #F9CB71;
+  color: #F9CF79;
 }
 a.text-link:hover {
-  color: #fbdda2;
+  color: #fbe0aa;
 }
 a.text-link:after {
   font-family: 'icomoon' !important;
@@ -156,9 +156,17 @@ html, body {
 
 body {
   color: #333333;
-  font-family: "Poppins", Hevetica, Arial, sans-serif;
+  font-family: "Muli", Hevetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.4;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .links a:link, .content a:link, section[role=main] > article a:link {
@@ -179,6 +187,41 @@ body {
   content: " »";
 }
 
+.typography, .content, section[role=main] > article {
+  /*h1 {
+    font-weight: 700;
+    font-size: 200%;
+    line-height: 0.785 * $line-height;
+    margin: 0.75em 0;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 0.785 * $line-height;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 140%;
+    line-height: 0.835 * $line-height;
+    margin: 1.25em 0 0.5em;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 110%;
+    line-height: 0.9 * $line-height;
+    margin: 0.5em 0 0.5em;
+  }
+  h5 {
+    font-style: italic;
+    font-size: 110%;
+    line-height: $line-height;
+    margin: 0.65em 0;
+  }
+  h6 {
+    font-weight: bold;
+    margin-bottom: -0.75em;
+  }*/
+}
 .typography strong, .content strong, section[role=main] > article strong, .typography b, .content b, section[role=main] > article b {
   color: black;
   font-weight: bold;
@@ -204,39 +247,6 @@ body {
 .typography h1, .content h1, section[role=main] > article h1, .typography h2, .content h2, section[role=main] > article h2, .typography h3, .content h3, section[role=main] > article h3, .typography h4, .content h4, section[role=main] > article h4, .typography h5, .content h5, section[role=main] > article h5, .typography h6, .content h6, section[role=main] > article h6 {
   color: #111111;
   margin: 1em 0;
-}
-.typography h1, .content h1, section[role=main] > article h1 {
-  font-weight: bold;
-  font-size: 200%;
-  line-height: 1.099;
-  margin: 0.75em 0;
-}
-.typography h2, .content h2, section[role=main] > article h2 {
-  font-weight: bold;
-  font-size: 1.2em;
-  line-height: 1.099;
-}
-.typography h3, .content h3, section[role=main] > article h3 {
-  font-weight: bold;
-  font-size: 140%;
-  line-height: 1.169;
-  margin: 1.25em 0 0.5em;
-}
-.typography h4, .content h4, section[role=main] > article h4 {
-  font-weight: bold;
-  font-size: 110%;
-  line-height: 1.26;
-  margin: 0.5em 0 0.5em;
-}
-.typography h5, .content h5, section[role=main] > article h5 {
-  font-style: italic;
-  font-size: 110%;
-  line-height: 1.4;
-  margin: 0.65em 0;
-}
-.typography h6, .content h6, section[role=main] > article h6 {
-  font-weight: bold;
-  margin-bottom: -0.75em;
 }
 .typography p, .content p, section[role=main] > article p {
   margin: 1em 0;
@@ -265,14 +275,14 @@ body {
   margin-bottom: 1em;
 }
 .typography code, .content code, section[role=main] > article code, .typography dfn, .content dfn, section[role=main] > article dfn, .typography kbd, .content kbd, section[role=main] > article kbd, .typography samp, .content samp, section[role=main] > article samp, .typography tt, .content tt, section[role=main] > article tt {
-  font-family: "Poppins", Hevetica, Arial, sans-serif;
+  font-family: "Muli", Hevetica, Arial, sans-serif;
   font-size: 95%;
   color: #666666;
 }
 .typography pre, .content pre, section[role=main] > article pre {
   background: #666666;
   color: #cccccc;
-  font-family: "Poppins", Hevetica, Arial, sans-serif;
+  font-family: "Muli", Hevetica, Arial, sans-serif;
   font-size: 95%;
   line-height: 1.4;
   margin: 1.5em 0;
@@ -343,7 +353,7 @@ header[role=banner] nav a:last-child {
   background-color: #BE493C;
 }
 header[role=banner] nav a:last-child:hover {
-  background-color: #F9CB71;
+  background-color: #F9CF79;
 }
 header[role=banner] nav a.active:hover {
   background-color: transparent;
@@ -422,6 +432,8 @@ footer {
   display: block;
   padding: 20px 0;
   background-color: #1D403E;
+  color: #fff;
+  margin-top: 40px;
 }
 footer #logo img {
   height: 30px;
@@ -439,14 +451,57 @@ footer #logo img {
   }
 }
 
+.grid-50 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .grid-50 {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+
 h2 {
-  font-weight: bold;
+  font-weight: 700;
   color: #1D403E;
-  font-size: 1.28em;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 700;
+  color: #1D403E;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid rgba(29, 64, 62, 0.3);
+  margin-bottom: 20px;
+}
+
+.small-text {
+  font-weight: 400;
+  font-size: 12px;
 }
 
 header {
   padding: 10px 0;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 0;
+  }
 }
 
 .main-banner {
@@ -454,7 +509,6 @@ header {
   width: 100%;
   height: 400px;
   background-color: #1D403E;
-  background-image: url("/images/table-bg.jpg");
   background-size: cover;
   background-position: center 30%;
   overflow: hidden;
@@ -478,14 +532,14 @@ header {
 .cta {
   position: absolute;
   top: 0;
-  padding: 60px 40px;
-  width: 50%;
+  padding: 80px 40px;
+  width: 55%;
   z-index: 5;
 }
 .cta h1 {
   font-size: 36px;
   line-height: 1.2em;
-  font-weight: bold;
+  font-weight: 800;
   color: #A9C549;
   margin-bottom: 20px;
 }
@@ -508,6 +562,7 @@ header {
 }
 .help-links h2 {
   margin-top: 20px;
+  margin-bottom: 0;
 }
 .help-links p {
   margin: 8px 0;
@@ -519,7 +574,7 @@ header {
   padding: 40px;
   width: 100%;
   height: auto;
-  background-color: #F9CB71;
+  background-color: #F9CF79;
   text-align: center;
 }
 
@@ -548,4 +603,59 @@ header {
   padding: 8px;
   border-radius: 100%;
   background-color: rgba(29, 64, 62, 0.3);
+}
+
+.header-image {
+  width: 100%;
+  height: 280px;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .header-image {
+    height: 120px;
+  }
+}
+
+.member-list {
+  margin-bottom: 20px;
+  position: relative;
+}
+.member-list .member-section {
+  display: inline-block;
+  padding: 20px 60px 20px 0;
+}
+.member-list .member-avatar {
+  display: inline-block;
+  background-color: #F9CF79;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.member-list .member-text {
+  display: inline-block;
+}
+.member-list .member-role {
+  font-style: italic;
+}
+
+.message-decoration {
+  position: relative;
+  margin: 40px 0 80px 0;
+}
+.message-decoration span {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: rgba(29, 64, 62, 0.3);
+  background-color: #ECF0F1;
+  padding: 10px;
+  margin-top: -55px;
+  width: 720px;
+  margin-left: -360px;
 }

@@ -112,12 +112,24 @@ footer {
   padding: 20px 0;
   #logo img{height:30px;}
   background-color: $primary-green;
+  color: #fff;
+  margin-top: 40px;
 }
 
 .grid-33{
   display:inline-block;
   vertical-align: top;
   width: 33%;
+  @media (max-width: $breakpoint-medium){
+    margin: 20px 0;
+    width: 100% ;
+  }
+}
+
+.grid-50{
+  display:inline-block;
+  vertical-align: top;
+  width: 50%;
   @media (max-width: $breakpoint-medium){
     margin: 20px 0;
     width: 100% ;
