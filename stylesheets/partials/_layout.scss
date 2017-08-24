@@ -14,7 +14,7 @@ body{background-color: $off-white;}
 header[role=banner] {
   position: relative;
   padding: 0;
-  background: $primary-green;
+  background: $primary-color;
   position: relative;
   height: 70px;
   #logo{
@@ -33,7 +33,7 @@ header[role=banner] {
       width: 100px;
       height: 70px;
       vertical-align: baseline;
-      &:hover{background-color:$secondary-green;};
+      &:hover{background-color:$secondary-color;};
       span{
         position: absolute; 
         bottom: 0;
@@ -47,7 +47,7 @@ header[role=banner] {
       &.active{
         &:hover{background-color: transparent;}
         span{background-color: $off-white;
-        color: $primary-green;
+        color: $primary-color;
         font-weight: bold;
         }
       }
@@ -85,7 +85,7 @@ header[role=banner] {
       left: 0;
       right: 0;
       width: 100%;
-      background-color: $primary-green;
+      background-color: $primary-color;
       height: auto;
       width: 100%;
       z-index: 10;
@@ -111,9 +111,9 @@ footer {
   display: block;
   padding: 20px 0;
   #logo img{height:30px;}
-  background-color: $primary-green;
+  background-color: $primary-color;
   color: #fff;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .grid-33{

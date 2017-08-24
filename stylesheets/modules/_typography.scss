@@ -35,7 +35,72 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-mail:before {
+  content: "\e91b";
+}
+.icon-phone:before {
+  content: "\e91c";
+}
+.icon-construction:before {
+  content: "\e914";
+}
+.icon-key:before {
+  content: "\e915";
+}
+.icon-apartment:before {
+  content: "\e916";
+}
+.icon-medal:before {
+  content: "\e917";
+}
+.icon-passport:before {
+  content: "\e918";
+}
+.icon-store:before {
+  content: "\e919";
+}
+.icon-adjust:before {
+  content: "\e91a";
+}
+.icon-bank:before {
+  content: "\e914";
+}
+.icon-battery:before {
+  content: "\e915";
+}
+.icon-like:before {
+  content: "\e916";
+}
+.icon-sign:before {
+  content: "\e917";
+}
+.icon-clipboard:before {
+  content: "\e913";
+}
+.icon-airplane:before {
+  content: "\e90b";
+}
+.icon-certified:before {
+  content: "\e90c";
+}
+.icon-change:before {
+  content: "\e90d";
+}
+.icon-credit-card:before {
+  content: "\e90e";
+}
+.icon-disable:before {
+  content: "\e90f";
+}
+.icon-house:before {
+  content: "\e910";
+}
+.icon-menu-copy:before {
+  content: "\e911";
+}
+.icon-coins:before {
+  content: "\e912";
+}
 .icon-yelp:before {
   content: "\e906";
 }
@@ -69,6 +134,7 @@
 .icon-user:before {
   content: "\e903";
 }
+
 
 // Typically this should be applied to content portion of the document:
 // 
