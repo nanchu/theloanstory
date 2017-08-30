@@ -35,6 +35,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-calc-wide:before {
+  content: "\e91d";
+}
+.icon-gift:before {
+  content: "\e91e";
+}
+.icon-gov:before {
+  content: "\e91f";
+}
 .icon-mail:before {
   content: "\e91b";
 }
