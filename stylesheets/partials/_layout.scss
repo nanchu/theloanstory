@@ -115,7 +115,16 @@ footer {
   color: #fff;
   margin-top: 20px;
 }
+.grid-30{
+  display:inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 1.5%;
+  @media (max-width: $breakpoint-medium){
 
+    width: 100% ;
+  }
+}
 .grid-33{
   display:inline-block;
   vertical-align: top;
