@@ -66,7 +66,7 @@ header[role=banner] {
       display: block;
       padding: 0.5em 1em;
       @include text-shadow(mix($banner-color, black, 50%) 0 1px 0);
-      &:after { content: " ⇢"; }
+      &:after { content: " "; }
     }
   }
   .icon-menu{
@@ -181,3 +181,13 @@ footer {
   }
 }
 
+span.you{
+  font-weight: 700; 
+  margin-right: 5px;
+  color: $secondary-red;
+}
+span.we{
+  font-weight: 700; 
+  margin-right: 5px;
+  color: $primary-color;
+}

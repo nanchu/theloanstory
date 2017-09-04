@@ -35,6 +35,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-bank:before {
+  content: "\e920";
+}
+.icon-like:before {
+  content: "\e921";
+}
+.icon-sign:before {
+  content: "\e922";
+}
 .icon-calc-wide:before {
   content: "\e91d";
 }
@@ -71,18 +80,6 @@
 .icon-adjust:before {
   content: "\e91a";
 }
-.icon-bank:before {
-  content: "\e914";
-}
-.icon-battery:before {
-  content: "\e915";
-}
-.icon-like:before {
-  content: "\e916";
-}
-.icon-sign:before {
-  content: "\e917";
-}
 .icon-clipboard:before {
   content: "\e913";
 }
@@ -104,7 +101,7 @@
 .icon-house:before {
   content: "\e910";
 }
-.icon-briefcase:before {
+.icon-menu-copy:before {
   content: "\e911";
 }
 .icon-coins:before {

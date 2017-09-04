@@ -46,6 +46,18 @@ a.primary:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bank:before {
+  content: "\e920";
+}
+
+.icon-like:before {
+  content: "\e921";
+}
+
+.icon-sign:before {
+  content: "\e922";
+}
+
 .icon-calc-wide:before {
   content: "\e91d";
 }
@@ -94,22 +106,6 @@ a.primary:hover {
   content: "\e91a";
 }
 
-.icon-bank:before {
-  content: "\e914";
-}
-
-.icon-battery:before {
-  content: "\e915";
-}
-
-.icon-like:before {
-  content: "\e916";
-}
-
-.icon-sign:before {
-  content: "\e917";
-}
-
 .icon-clipboard:before {
   content: "\e913";
 }
@@ -138,7 +134,7 @@ a.primary:hover {
   content: "\e910";
 }
 
-.icon-briefcase:before {
+.icon-menu-copy:before {
   content: "\e911";
 }
 
@@ -492,7 +488,7 @@ header[role=banner] .action-link a {
   text-shadow: #4c1e09 0 1px 0;
 }
 header[role=banner] .action-link a:after {
-  content: " ⇢";
+  content: " ";
 }
 header[role=banner] .icon-menu {
   position: absolute;
@@ -622,6 +618,18 @@ footer #logo img {
     margin: 20px 0;
     width: 100%;
   }
+}
+
+span.you {
+  font-weight: 700;
+  margin-right: 5px;
+  color: #BE493C;
+}
+
+span.we {
+  font-weight: 700;
+  margin-right: 5px;
+  color: #2A5C59;
 }
 
 h2 {
