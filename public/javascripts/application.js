@@ -12,4 +12,14 @@ $(".tab").click(function(){
 
 });
 
+
+$(".list-item").click(function(){
+	$(".list-item").removeClass('active');
+	$(this).addClass('active');
+	var position = $(this).position();
+	console.log(position.left);
+	$(this).children('.child-content').css('margin-left', '-'+ position.left - (-46) +'px');
+});
+
+
 });

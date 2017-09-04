@@ -828,24 +828,6 @@ header {
   margin-left: -360px;
 }
 
-ul.tabs li {
-  position: relative;
-  background-color: rgba(169, 197, 73, 0.5);
-  padding: 20px;
-  text-align: center;
-  cursor: pointer;
-  display: inline-block;
-}
-ul.tabs .active {
-  background-color: #fff;
-}
-ul.tabs .active:hover {
-  background-color: #fff;
-}
-ul.tabs li {
-  width: 300px;
-}
-
 .tabs.center {
   width: 600px;
   margin: 0 auto;
@@ -876,12 +858,52 @@ ul.tabs.rounded .active {
 ul.tabs.rounded .active:hover {
   background-color: #fff;
 }
+ul.tabs.rounded .active:before {
+  position: absolute;
+  bottom: -16px;
+  margin-left: -13px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid #A9C549;
+}
+ul.tabs.rounded .active:after {
+  position: absolute;
+  bottom: -14px;
+  margin-left: -11px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 14px solid #fff;
+}
 ul.tabs.rounded .icon {
   position: absolute;
   left: 40px;
   top: -10px;
   font-size: 60px;
   color: #2A5C59;
+}
+
+ul.tabs li {
+  position: relative;
+  background-color: rgba(169, 197, 73, 0.5);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+ul.tabs li.active {
+  background-color: #fff;
+}
+ul.tabs li.active:hover {
+  background-color: #fff;
+}
+ul.tabs li {
+  width: 300px;
 }
 
 .tab-content {
@@ -925,16 +947,20 @@ ul.tabs.rounded .icon {
 }
 
 .grid-list li.list-item {
+  position: relative;
   display: inline-block;
+  height: auto;
   vertical-align: top;
+}
+.grid-list li.list-item .child-tile {
   position: relative;
   background-color: rgba(169, 197, 73, 0.4);
-  height: 140px;
   border-radius: 8px;
-  padding: 25px;
   cursor: pointer;
+  padding: 25px;
+  height: 140px;
 }
-.grid-list li.list-item:hover {
+.grid-list li.list-item .child-tile:hover {
   background-color: rgba(169, 197, 73, 0.3);
 }
 .grid-list li.list-item .icon {
@@ -944,23 +970,46 @@ ul.tabs.rounded .icon {
   padding-top: 10px;
   font-weight: 600;
 }
-.grid-list li.list-item.active {
+.grid-list li.list-item.active .child-tile {
   background-color: #fff;
   border: 1px solid #A9C549;
 }
+.grid-list li.list-item.active .child-tile:before {
+  position: absolute;
+  bottom: -16px;
+  margin-left: -13px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid #A9C549;
+}
+.grid-list li.list-item.active .child-tile:after {
+  position: absolute;
+  bottom: -14px;
+  margin-left: -11px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 14px solid #fff;
+}
+.grid-list li.list-item.active .child-content {
+  display: block;
+}
 
-.content-list {
-  margin: 0 20px 40px 20px;
+.child-content {
+  position: relative;
+  width: 320% !important;
+  margin-top: 20px;
+  height: auto;
+  width: 100%;
   padding: 20px;
   text-align: left;
-  background-color: #fff;
-  border-radius: 6px;
-}
-.content-list .content-list-item {
   display: none;
-}
-.content-list .content-list-item.active {
-  display: block;
+  background-color: #fff;
 }
 
 .mortgage-calc-form, .calc-results {
