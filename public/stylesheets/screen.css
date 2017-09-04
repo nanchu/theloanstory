@@ -461,6 +461,7 @@ header[role=banner] nav a span {
 }
 header[role=banner] nav a:last-child {
   background-color: #BE493C;
+  width: 110px;
 }
 header[role=banner] nav a:last-child:hover {
   background-color: #FFE687;
@@ -472,6 +473,9 @@ header[role=banner] nav a.active span {
   background-color: #ECF0F1;
   color: #2A5C59;
   font-weight: bold;
+}
+header[role=banner] nav a.tools {
+  width: 72px;
 }
 header[role=banner] .action-link {
   position: absolute;
@@ -518,11 +522,22 @@ header[role=banner] .icon-menu {
     height: auto;
     width: 100%;
     z-index: 10;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.4), 0px 1px 2px rgba(0, 0, 0, 0.5);
   }
   header[role=banner] nav a {
     display: block;
     height: 40px;
-    width: 100%;
+    width: 100% !important;
+  }
+  header[role=banner] nav a.active span {
+    background-color: transparent !important;
+    color: #fff;
+    border-left: 4px solid #fff;
+  }
+  header[role=banner] nav.active {
+    display: block;
+    position: absolute;
+    top: 70px;
   }
 }
 
@@ -773,6 +788,10 @@ header {
 @media (max-width: 768px) {
   .header-image {
     height: 120px;
+    padding-top: 40px;
+  }
+  .header-image h1 {
+    font-size: 26px;
   }
 }
 .header-image.opaque:before {
@@ -1002,7 +1021,7 @@ ul.tabs li {
 
 .child-content {
   position: relative;
-  width: 320% !important;
+  width: 322% !important;
   margin-top: 20px;
   height: auto;
   width: 100%;
@@ -1010,6 +1029,11 @@ ul.tabs li {
   text-align: left;
   display: none;
   background-color: #fff;
+}
+@media (max-width: 768px) {
+  .child-content {
+    width: 100% !important;
+  }
 }
 
 .mortgage-calc-form, .calc-results {

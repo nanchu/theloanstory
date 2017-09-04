@@ -18,8 +18,11 @@ $(".list-item").click(function(){
 	$(this).addClass('active');
 	var position = $(this).position();
 	console.log(position.left);
-	$(this).children('.child-content').css('margin-left', '-'+ position.left - (-46) +'px');
+	$(this).children('.child-content').css('margin-left', '-'+ position.left - (-42) +'px');
 });
 
+$(".icon-menu").click(function(){
+	$('nav').addClass('active');
+});
 
 });
