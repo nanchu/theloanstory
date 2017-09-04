@@ -61,3 +61,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+input{
+	padding: 5px 10px;
+	background-color: $off-white;
+	border: 1px solid #ccc;
+}
+
+input.large{width:100%;}
