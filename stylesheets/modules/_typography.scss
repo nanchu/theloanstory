@@ -35,6 +35,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-battery:before {
+  content: "\e911";
+}
+.icon-briefcase:before {
+  content: "\e925";
+}
+.icon-email:before {
+  content: "\e923";
+}
+.icon-fax:before {
+  content: "\e924";
+}
 .icon-bank:before {
   content: "\e920";
 }
@@ -100,9 +112,6 @@
 }
 .icon-house:before {
   content: "\e910";
-}
-.icon-menu-copy:before {
-  content: "\e911";
 }
 .icon-coins:before {
   content: "\e912";

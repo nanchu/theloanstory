@@ -30,29 +30,43 @@ header[role=banner] {
       position:relative;
       display: inline-block;
       margin-right: -5px;
-      width: 100px;
+      width: 110px;
       height: 70px;
       vertical-align: baseline;
-      &:hover{background-color:$secondary-color;};
+      font-weight: 700;
+      &:hover{background-color:$secondary-color;}
+      &:after{
+        content:"";
+        border-right: 1px solid #fff;
+        margin-top: 30px;
+        display: block;
+        height: 40px;
+      }
       span{
         position: absolute; 
         bottom: 0;
-        padding: 10px 15px 5px 10px;
+        padding: 10px 15px 5px 15px;
         color: #fff;
       }
       &:last-child{
         background-color:$secondary-red;
-        width: 110px;
+        width: 120px;
         &:hover{background-color: $tertiary-yellow;}
+        &:after{border:none;}
       }
       &.active{
         &:hover{background-color: transparent;}
-        span{background-color: $off-white;
+        &:after{border: none;}
+        span{
+        background-color: $off-white;
         color: $primary-color;
         font-weight: bold;
+        width: 100%;
         }
       }
-      &.tools{width: 72px;}
+      &.tools{
+        width: 80px;
+      }
     }
 
   }
@@ -130,6 +144,8 @@ footer {
   background-color: $primary-color;
   color: #fff;
   margin-top: 20px;
+  .footer-license{margin-top: 20px;text-align: center;}
+  .footer-contact{text-align:right;}
 }
 .grid-30{
   display:inline-block;
@@ -190,4 +206,10 @@ span.we{
   font-weight: 700; 
   margin-right: 5px;
   color: $primary-color;
+}
+
+.social-icon{
+  font-size:26px;
+  padding: 4px;
+  color: #fff;
 }
