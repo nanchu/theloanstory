@@ -57,12 +57,14 @@ header[role=banner] {
       &.active{
         &:hover{background-color: transparent;}
         &:after{border: none;}
-        span{
+        background-color: $off-white;
+        span{color: $primary-color;}
+       /* span{
         background-color: $off-white;
         color: $primary-color;
         font-weight: bold;
         width: 100%;
-        }
+        }*/
       }
       &.tools{
         width: 80px;
@@ -205,7 +207,7 @@ span.you{
 span.we{
   font-weight: 700; 
   margin-right: 5px;
-  color: $primary-color;
+  color: $secondary-color;
 }
 
 .social-icon{

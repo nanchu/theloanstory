@@ -485,6 +485,15 @@ header[role=banner] nav a:last-child:hover {
 header[role=banner] nav a:last-child:after {
   border: none;
 }
+header[role=banner] nav a.active {
+  background-color: #ECF0F1;
+  /* span{
+   background-color: $off-white;
+   color: $primary-color;
+   font-weight: bold;
+   width: 100%;
+   }*/
+}
 header[role=banner] nav a.active:hover {
   background-color: transparent;
 }
@@ -492,10 +501,7 @@ header[role=banner] nav a.active:after {
   border: none;
 }
 header[role=banner] nav a.active span {
-  background-color: #ECF0F1;
   color: #224A48;
-  font-weight: bold;
-  width: 100%;
 }
 header[role=banner] nav a.tools {
   width: 80px;
@@ -663,7 +669,7 @@ span.you {
 span.we {
   font-weight: 700;
   margin-right: 5px;
-  color: #224A48;
+  color: #A9C549;
 }
 
 .social-icon {
@@ -1239,6 +1245,25 @@ form .clear-form {
 }
 .results .summary {
   float: right;
+}
+.results.payment:before {
+  display: inline-block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.results.principal:before {
+  background-color: #A9C549;
+}
+.results.tax:before {
+  background-color: #BE493C;
+}
+.results.hoa:before {
+  background-color: #FFE687;
+}
+.results.insurance:before {
+  background-color: #49A1C5;
 }
 
 .amortization {

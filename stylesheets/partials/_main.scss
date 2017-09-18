@@ -227,7 +227,6 @@ header{
 	background-image:url('/images/rectangle-texture.png');
 	background-repeat: repeat;
 	background-size:35%;
-	
 	height: auto;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
@@ -493,7 +492,27 @@ form{
 	margin-top: 15px;
 	font-size: 12px;
 	.summary{float: right;}
+	&.payment:before{
+		display:inline-block;
+		content:" ";
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+	}
+	&.principal{ 
+		&:before{background-color: $secondary-color;}
+	}
+	&.tax{ 
+		&:before{background-color: $secondary-red;}
+	}
+	&.hoa{ 
+		&:before{background-color: $tertiary-yellow;}
+	}
+	&.insurance{ 
+		&:before{background-color: $secondary-blue;}
+	}
 }
+
 .amortization{
 	text-align: center;
 	padding: 20px 0;
