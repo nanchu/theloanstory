@@ -722,6 +722,17 @@ ul.bullet-list li {
   margin-left: 30px;
 }
 
+button.primary-big {
+  height: 40px;
+  background-color: #BE493C;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
 header {
   padding: 10px 0;
 }
@@ -729,6 +740,10 @@ header {
   header {
     padding: 0;
   }
+}
+
+.breadcrumbs a {
+  color: #224A48;
 }
 
 .icon {
@@ -868,13 +883,18 @@ header {
   margin-bottom: 20px;
   text-align: center;
   z-index: 0;
-  padding-top: 60px;
+  padding: 60px;
 }
 .header-image h1 {
   color: #fff;
   font-size: 38px;
   font-weight: 700;
   z-index: 5;
+  margin-bottom: 10px;
+}
+.header-image p {
+  color: #fff;
+  font-size: 18px;
 }
 @media (max-width: 768px) {
   .header-image {
@@ -903,8 +923,13 @@ header {
 .member-list .member-section {
   display: inline-block;
   padding: 20px 60px 20px 0;
+  color: #224A48;
 }
-.member-list .member-avatar {
+.member-list .member-name {
+  margin-top: 20px;
+}
+
+.member-avatar {
   display: inline-block;
   background-color: #FFE687;
   width: 100px;
@@ -912,12 +937,49 @@ header {
   border-radius: 50%;
   float: left;
   margin: 0 20px 20px 0;
+  background-size: contain;
 }
-.member-list .member-text {
-  display: inline-block;
-}
-.member-list .member-role {
+
+.member-role {
   font-style: italic;
+}
+
+.loan-officer-card .header {
+  margin-top: 60px;
+  background-color: #FFE687;
+  background-image: url("/images/rectangle-texture.png");
+  background-repeat: repeat;
+  background-size: 35%;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 20px 40px;
+}
+.loan-officer-card .header .member-avatar {
+  margin-top: -50px;
+  width: 140px;
+  height: 140px;
+  border: 4px solid #FFE687;
+}
+.loan-officer-card .header .member-role {
+  margin-bottom: 10px;
+}
+.loan-officer-card .header .icon-phone, .loan-officer-card .header .icon-email {
+  margin-right: 4px;
+}
+.loan-officer-card .header .icon-email {
+  margin-left: 10px;
+}
+.loan-officer-card .header button {
+  float: right;
+  margin-top: -20px;
+}
+
+.loan-officer-card .bio {
+  background-color: #fff;
+  padding: 20px 40px 40px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .message-decoration {
@@ -941,6 +1003,13 @@ header {
 .tabs.center {
   width: 600px;
   margin: 0 auto;
+}
+
+.testimonials {
+  margin-top: 40px;
+}
+.testimonials h2 {
+  text-align: center;
 }
 
 ul.tabs.rounded {
