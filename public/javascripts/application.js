@@ -22,7 +22,7 @@ $(".list-item").click(function(){
 });
 
 $(".icon-menu").click(function(){
-	$('nav').addClass('active');
+	$('nav').toggleClass('active');
 });
 
 });

@@ -486,6 +486,7 @@ header[role=banner] nav a:last-child:after {
   border: none;
 }
 header[role=banner] nav a.active {
+  /* &:hover{background-color: transparent;}*/
   background-color: #ECF0F1;
   /* span{
    background-color: $off-white;
@@ -493,9 +494,6 @@ header[role=banner] nav a.active {
    font-weight: bold;
    width: 100%;
    }*/
-}
-header[role=banner] nav a.active:hover {
-  background-color: transparent;
 }
 header[role=banner] nav a.active:after {
   border: none;
@@ -558,6 +556,9 @@ header[role=banner] .icon-menu {
     height: 40px;
     width: 100% !important;
   }
+  header[role=banner] nav a.active {
+    background-color: transparent !important;
+  }
   header[role=banner] nav a.active span {
     background-color: transparent !important;
     color: #fff;
@@ -582,6 +583,12 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 0 10px;
+  }
+}
+
 footer {
   display: block;
   padding: 20px 0;
@@ -596,8 +603,25 @@ footer .footer-license {
   margin-top: 20px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  footer .footer-license {
+    text-align: left;
+    margin-top: 0;
+  }
+}
 footer .footer-contact {
   text-align: right;
+}
+@media (max-width: 768px) {
+  footer .footer-contact {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 0 20px;
+  }
 }
 
 .grid-30 {
@@ -780,7 +804,7 @@ header {
   transform: skewX(-15deg);
   z-index: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .main-banner:after {
     width: 100%;
     left: 0;
@@ -813,12 +837,17 @@ header {
   font-size: 18px;
   color: #fff;
 }
+@media (max-width: 900px) {
+  .cta {
+    width: 90%;
+  }
+}
 @media (max-width: 768px) {
   .cta {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .cta {
     padding: 20px;
   }
@@ -904,8 +933,8 @@ header {
 }
 @media (max-width: 768px) {
   .header-image {
-    height: 120px;
-    padding-top: 40px;
+    /*height: 120px;*/
+    padding: 40px 20px;
   }
   .header-image h1 {
     font-size: 26px;
@@ -1004,6 +1033,11 @@ header {
   margin-top: -55px;
   width: 720px;
   margin-left: -360px;
+}
+@media (max-width: 768px) {
+  .message-decoration span {
+    font-size: 20px;
+  }
 }
 
 .tabs.center {
@@ -1148,6 +1182,9 @@ ul.tabs li {
 .grid-list li.list-item .child-tile:hover {
   background-color: rgba(169, 197, 73, 0.3);
 }
+.grid-list li.list-item .child-tile.secondary {
+  background-color: rgba(255, 230, 135, 0.8);
+}
 .grid-list li.list-item .icon {
   font-size: 50px;
 }
@@ -1249,9 +1286,11 @@ form .clear-form {
 .results.payment:before {
   display: inline-block;
   content: " ";
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
+  margin-bottom: -2px;
+  margin-right: 5px;
 }
 .results.principal:before {
   background-color: #A9C549;

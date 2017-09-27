@@ -55,7 +55,7 @@ header[role=banner] {
         &:after{border:none;}
       }
       &.active{
-        &:hover{background-color: transparent;}
+       /* &:hover{background-color: transparent;}*/
         &:after{border: none;}
         background-color: $off-white;
         span{color: $primary-color;}
@@ -113,10 +113,13 @@ header[role=banner] {
         display:block;
         height: 40px;
         width: 100% !important;
-        &.active span{
-          background-color:transparent !important;
-          color: #fff;
-          border-left: 4px solid #fff;
+        &.active{
+          background-color: transparent !important;
+          span{
+            background-color:transparent !important;
+            color: #fff;
+            border-left: 4px solid #fff;
+          }
         }
       }
       &.active{
@@ -139,6 +142,11 @@ section{
     padding: 0;
   }
 }
+.content-wrapper{
+  @media (max-width: $breakpoint-medium){
+    padding: 0 10px;
+  }
+}
 footer {
   display: block;
   padding: 20px 0;
@@ -146,8 +154,24 @@ footer {
   background-color: $primary-color;
   color: #fff;
   margin-top: 20px;
-  .footer-license{margin-top: 20px;text-align: center;}
-  .footer-contact{text-align:right;}
+  .footer-license{
+    margin-top: 20px;
+    text-align: center;
+    @media (max-width: $breakpoint-medium){
+      text-align: left;
+      margin-top: 0;
+    }
+  }
+  .footer-contact{
+    text-align:right;
+    @media (max-width: $breakpoint-medium){
+      text-align: left;
+      margin-top: 0;
+    }
+  }
+  @media (max-width: $breakpoint-medium){
+    padding: 0 20px;
+  }
 }
 .grid-30{
   display:inline-block;

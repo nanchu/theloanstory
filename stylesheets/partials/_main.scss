@@ -74,7 +74,7 @@ header{
 	    -webkit-transform: skewX(-15deg); /* Safari */
 	    transform: skewX(-15deg);
 	    z-index: 0;
-	    @media (max-width: $breakpoint-medium){
+	    @media (max-width: 900px){
 			width:100%;
 			left: 0;
 			-ms-transform: skewX(0); /* IE 9 */
@@ -103,11 +103,13 @@ header{
 		color:#fff;
 	}
 	z-index: 5;
-
+	@media (max-width: 900px){
+		width:90%;
+	}
 	@media (max-width: $breakpoint-medium){
 		width:100%;
 	}
-	@media (max-width: 400px){
+	@media (max-width: 500px){
 		padding: 20px;
 		h1{font-size: 30px;}
 		h2{font-size: 24px;}
@@ -180,8 +182,8 @@ header{
 	}
 
 	@media (max-width: $breakpoint-medium){
-		height: 120px;
-		padding-top: 40px;
+		/*height: 120px;*/
+		padding: 40px 20px;
 		h1{
 			font-size: 26px;
 		}
@@ -268,6 +270,9 @@ header{
 		margin-top: -55px;
 		width: 720px;
 		margin-left: -360px;
+		@media (max-width: $breakpoint-medium){
+      		font-size: 20px;
+    	}
 	}
 }
 
@@ -393,6 +398,7 @@ ul.tabs{
 		&:hover{background-color:rgba($secondary-color, .3);}
 		padding: 25px;
 		height: 140px;
+		&.secondary{background-color: rgba($tertiary-yellow, .8);}
 	}
 	.icon{
 		font-size: 50px;
@@ -495,9 +501,11 @@ form{
 	&.payment:before{
 		display:inline-block;
 		content:" ";
-		width: 10px;
-		height: 10px;
+		width: 15px;
+		height: 15px;
 		border-radius: 50%;
+		margin-bottom: -2px;
+		margin-right: 5px;
 	}
 	&.principal{ 
 		&:before{background-color: $secondary-color;}
