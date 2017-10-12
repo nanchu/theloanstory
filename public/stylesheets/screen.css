@@ -435,7 +435,7 @@ body {
 header[role=banner] {
   position: relative;
   padding: 0;
-  background: #224A48;
+  background: #25514E;
   position: relative;
   height: 70px;
 }
@@ -499,7 +499,7 @@ header[role=banner] nav a.active:after {
   border: none;
 }
 header[role=banner] nav a.active span {
-  color: #224A48;
+  color: #25514E;
 }
 header[role=banner] nav a.tools {
   width: 80px;
@@ -545,7 +545,7 @@ header[role=banner] .icon-menu {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #224A48;
+    background-color: #25514E;
     height: auto;
     width: 100%;
     z-index: 10;
@@ -592,7 +592,7 @@ section {
 footer {
   display: block;
   padding: 20px 0;
-  background-color: #224A48;
+  background-color: #25514E;
   color: #fff;
   margin-top: 20px;
 }
@@ -704,7 +704,7 @@ span.we {
 
 h2 {
   font-weight: 700;
-  color: #224A48;
+  color: #25514E;
   font-size: 26px;
   line-height: 30px;
   margin-bottom: 20px;
@@ -713,7 +713,7 @@ h2 {
 
 h3 {
   font-weight: 700;
-  color: #224A48;
+  color: #25514E;
   font-size: 18px;
   line-height: 26px;
 }
@@ -726,7 +726,7 @@ p {
 
 hr {
   border: none;
-  border-top: 1px solid rgba(34, 74, 72, 0.3);
+  border-top: 1px solid rgba(37, 81, 78, 0.3);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -772,8 +772,11 @@ header {
   }
 }
 
+.breadcrumbs {
+  padding: 10px;
+}
 .breadcrumbs a {
-  color: #224A48;
+  color: #25514E;
 }
 
 .icon {
@@ -784,7 +787,7 @@ header {
   position: relative;
   width: 100%;
   height: 400px;
-  background-color: #224A48;
+  background-color: #25514E;
   background-size: cover;
   background-position: center 30%;
   overflow: hidden;
@@ -793,7 +796,7 @@ header {
   content: " ";
   width: 80%;
   height: 100%;
-  background-color: rgba(34, 74, 72, 0.7);
+  background-color: rgba(37, 81, 78, 0.7);
   position: absolute;
   left: -20%;
   top: 0;
@@ -915,6 +918,7 @@ header {
   height: 240px;
   background-position: center center;
   background-size: cover;
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   z-index: 0;
@@ -935,6 +939,7 @@ header {
   .header-image {
     /*height: 120px;*/
     padding: 40px 20px;
+    margin-top: 0;
   }
   .header-image h1 {
     font-size: 26px;
@@ -943,7 +948,7 @@ header {
 .header-image.opaque:before {
   content: "";
   position: absolute;
-  background-color: rgba(34, 74, 72, 0.5);
+  background-color: rgba(37, 81, 78, 0.5);
   top: 0;
   left: 0;
   right: 0;
@@ -958,7 +963,7 @@ header {
 .member-list .member-section {
   display: inline-block;
   padding: 20px 60px 20px 0;
-  color: #224A48;
+  color: #25514E;
 }
 .member-list .member-name {
   margin-top: 20px;
@@ -980,7 +985,7 @@ header {
 }
 
 .loan-officer-card .header {
-  margin-top: 60px;
+  margin-top: 40px;
   background-color: #FFE687;
   background-image: url("/images/rectangle-texture.png");
   background-repeat: repeat;
@@ -990,11 +995,37 @@ header {
   border-top-right-radius: 12px;
   padding: 20px 40px;
 }
+@media (max-width: 768px) {
+  .loan-officer-card .header {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .loan-officer-card .header {
+    padding: 20px;
+  }
+}
 .loan-officer-card .header .member-avatar {
   margin-top: -50px;
   width: 140px;
   height: 140px;
   border: 4px solid #FFE687;
+}
+@media (max-width: 768px) {
+  .loan-officer-card .header .member-avatar {
+    width: 100px;
+    height: 100px;
+    margin-top: -10px;
+  }
+}
+.loan-officer-card .header .phone-number, .loan-officer-card .header .email {
+  display: inline-block;
+  margin-right: 10px;
+}
+@media (max-width: 420px) {
+  .loan-officer-card .header .phone-number, .loan-officer-card .header .email {
+    display: block;
+  }
 }
 .loan-officer-card .header .member-role {
   margin-bottom: 10px;
@@ -1002,12 +1033,21 @@ header {
 .loan-officer-card .header .icon-phone, .loan-officer-card .header .icon-email {
   margin-right: 4px;
 }
-.loan-officer-card .header .icon-email {
-  margin-left: 10px;
-}
-.loan-officer-card .header button {
+.loan-officer-card .header .member-license {
+  display: inline-block;
   float: right;
-  margin-top: -20px;
+  margin-top: -50px;
+  text-align: right;
+}
+.loan-officer-card .header .member-license button {
+  margin-top: 10px;
+}
+@media (max-width: 420px) {
+  .loan-officer-card .header .member-license {
+    margin-top: 0;
+    float: initial;
+    text-align: left;
+  }
 }
 
 .loan-officer-card .bio {
@@ -1015,6 +1055,11 @@ header {
   padding: 20px 40px 40px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+}
+@media (max-width: 420px) {
+  .loan-officer-card .bio {
+    padding: 20px;
+  }
 }
 
 .message-decoration {
@@ -1027,7 +1072,7 @@ header {
   text-align: center;
   font-size: 34px;
   font-weight: 700;
-  color: rgba(34, 74, 72, 0.3);
+  color: rgba(37, 81, 78, 0.3);
   background-color: #ECF0F1;
   padding: 10px;
   margin-top: -55px;
@@ -1050,6 +1095,11 @@ header {
 }
 .testimonials h2 {
   text-align: center;
+}
+@media (max-width: 420px) {
+  .testimonials {
+    padding: 10px;
+  }
 }
 
 ul.tabs.rounded {
@@ -1104,7 +1154,7 @@ ul.tabs.rounded .icon {
   left: 40px;
   top: -10px;
   font-size: 60px;
-  color: #224A48;
+  color: #25514E;
 }
 
 ul.tabs li {
@@ -1141,7 +1191,7 @@ ul.tabs li {
   position: relative;
   padding: 20px 40px;
   margin: 0 40px;
-  border-bottom: 1px solid rgba(34, 74, 72, 0.3);
+  border-bottom: 1px solid rgba(37, 81, 78, 0.3);
 }
 .content-wrap:last-child {
   border-bottom: none;
@@ -1259,7 +1309,7 @@ form .clear-form {
   display: block;
   text-align: right;
   font-size: 28px;
-  color: #224A48;
+  color: #25514E;
   margin-top: -40px;
 }
 .total-payment:after {
@@ -1272,7 +1322,7 @@ form .clear-form {
 .results-bar {
   height: 14px;
   width: 100%;
-  background-color: #224A48;
+  background-color: #25514E;
   margin-top: 10px;
 }
 
@@ -1315,7 +1365,7 @@ form .clear-form {
 
 table {
   width: 100%;
-  border: 1px solid #224A48;
+  border: 1px solid #25514E;
   text-align: center;
   font-size: 12px;
 }
@@ -1324,12 +1374,12 @@ table td, table th {
   text-align: center;
 }
 table td {
-  border-right: 1px solid #224A48;
+  border-right: 1px solid #25514E;
 }
 table th {
   background-color: #fff;
-  border-bottom: 1px solid #224A48;
+  border-bottom: 1px solid #25514E;
 }
 table tr:nth-child(even) {
-  background-color: rgba(34, 74, 72, 0.3);
+  background-color: rgba(37, 81, 78, 0.3);
 }

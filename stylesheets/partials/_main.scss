@@ -52,7 +52,10 @@ header{
 		padding: 0;
 	}
 }
-.breadcrumbs a{color:$primary-color;}
+.breadcrumbs{
+	padding: 10px;
+	a{color:$primary-color;}
+} 
 .icon{padding-right: 5px;}
 .main-banner{
 	position: relative;
@@ -164,11 +167,11 @@ header{
 	height: 240px;
 	background-position: center center;
 	background-size: cover;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: center;
 	z-index:0;
 	padding: 60px;
-
 	h1{
 		color: #fff;
 		font-size: 38px;
@@ -184,6 +187,7 @@ header{
 	@media (max-width: $breakpoint-medium){
 		/*height: 120px;*/
 		padding: 40px 20px;
+		margin-top: 0;
 		h1{
 			font-size: 26px;
 		}
@@ -224,8 +228,8 @@ header{
 .member-role{font-style:italic;}
 
 .loan-officer-card .header{
-	margin-top: 60px;
-	background-color:$tertiary-yellow;
+	margin-top: 40px;
+	background-color: $tertiary-yellow;
 	background-image:url('/images/rectangle-texture.png');
 	background-repeat: repeat;
 	background-size:35%;
@@ -233,18 +237,43 @@ header{
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	padding: 20px 40px;
+	@media (max-width: $breakpoint-medium){
+		margin-top: 20px;
+	}
+	@media (max-width: $breakpoint-small){
+		padding: 20px;
+	}
 	.member-avatar{
 		margin-top: -50px;
 		width: 140px;
 		height: 140px;
 		border: 4px solid $tertiary-yellow;
+		@media (max-width: $breakpoint-medium){
+			width: 100px;
+			height: 100px;
+			margin-top: -10px;
+		}
+	}
+	.phone-number, .email{
+		display: inline-block;
+		margin-right: 10px;
+		@media (max-width: $breakpoint-small){
+			display: block;
+		}
 	}
 	.member-role{margin-bottom: 10px;}
 	.icon-phone,.icon-email{margin-right: 4px;}
-	.icon-email{margin-left: 10px;}
-	button{
+	.member-license{
+		display: inline-block;
 		float: right;
-		margin-top: -20px;
+		margin-top: -50px;
+		text-align: right;
+		button{margin-top: 10px;}
+		@media (max-width: $breakpoint-small){
+			margin-top: 0;
+			float: initial;
+			text-align: left;
+		}
 	}
 
 }
@@ -254,6 +283,9 @@ header{
 	padding: 20px 40px 40px;
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;
+	@media (max-width: $breakpoint-small){
+		padding: 20px;
+	}
 }
 .message-decoration{
 	position: relative;
@@ -283,6 +315,9 @@ header{
 .testimonials{
 	h2{text-align: center;}
 	margin-top: 40px;
+	@media (max-width: $breakpoint-small){
+		padding: 10px;
+	}
 }
 
 ul.tabs.rounded{
