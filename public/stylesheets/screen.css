@@ -978,6 +978,7 @@ header {
   float: left;
   margin: 0 20px 20px 0;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .member-role {
@@ -997,7 +998,7 @@ header {
 }
 @media (max-width: 768px) {
   .loan-officer-card .header {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 420px) {
@@ -1011,7 +1012,18 @@ header {
   height: 140px;
   border: 4px solid #FFE687;
 }
-@media (max-width: 768px) {
+@media (max-width: 860px) {
+  .loan-officer-card .header .member-avatar {
+    margin-top: 0;
+  }
+}
+@media (max-width: 520px) {
+  .loan-officer-card .header .member-avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 420px) {
   .loan-officer-card .header .member-avatar {
     width: 100px;
     height: 100px;
@@ -1042,7 +1054,7 @@ header {
 .loan-officer-card .header .member-license button {
   margin-top: 10px;
 }
-@media (max-width: 420px) {
+@media (max-width: 860px) {
   .loan-officer-card .header .member-license {
     margin-top: 0;
     float: initial;
