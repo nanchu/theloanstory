@@ -287,6 +287,14 @@ input.large {
   width: 100%;
 }
 
+input.medium {
+  width: 80%;
+}
+
+input.tiny {
+  width: 20%;
+}
+
 .links a:link, .content a:link, section[role=main] > article a:link {
   color: #bb3a08;
   text-decoration: underline;
